@@ -47,7 +47,9 @@ function Intro() {
         </div>
         <ul className="flex gap-2 items-center">
           {links.map((l, index) => (
-            <Link key={index} name={l.name} url={l.url} icon={l.icon} />
+            <Link key={index} name={l.name}>
+              {l.icon}
+            </Link>
           ))}
         </ul>
       </div>
@@ -65,7 +67,9 @@ function Intro() {
         <SubHeader>Socials</SubHeader>
         <ul className="flex gap-2">
           {links.map((l, index) => (
-            <Link key={index} name={l.name} url={l.url} icon={l.icon} />
+            <Link key={index} name={l.name} url={l.url}>
+              {l.icon}
+            </Link>
           ))}
         </ul>
       </div>

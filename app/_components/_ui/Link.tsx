@@ -1,21 +1,23 @@
 import React from "react";
-import { IconType } from "react-icons";
 
 function Link({
   name,
   url,
-  icon,
   className,
+  children,
 }: {
   name: string;
   url?: string;
-  icon: IconType;
   className?: string;
+  children: React.ReactNode;
 }) {
   return (
-    <li className="hover:text-red-500">
+    <li
+      className={`hover:text-red-500 cursor-pointer ${className}`}
+      title={name}
+    >
       <a href={url} className="text-xl">
-        {icon}
+        {children}
       </a>
     </li>
   );
