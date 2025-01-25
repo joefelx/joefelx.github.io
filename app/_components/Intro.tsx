@@ -1,11 +1,12 @@
-/* eslint-disable react/no-unescaped-entities */
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import SubHeader from "./_ui/SubHeader";
 import Link from "./_ui/Link";
 import Projects from "./Projects";
 import Project from "./Project";
 import { FaGithub, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
+import data from "../config/Data.json";
 
 function Intro() {
   const links = [
@@ -31,8 +32,24 @@ function Intro() {
     },
   ];
 
+  interface IProject {
+    title: string;
+    description: string;
+    github: string;
+    live: string;
+    image: string;
+  }
+
+  const [projects, setProjects] = useState<Array<IProject>>([]);
+
+  useEffect(() => {
+    // Example usage:
+    console.log(data["name"]);
+    setProjects(data["projects"]);
+  }, []);
+
   return (
-    <div className="p-5 ">
+    <div className="p-5">
       {/* Intro */}
       <div className="my-20">
         <div className="mt-20 mb-10">
@@ -58,7 +75,15 @@ function Intro() {
       <div>
         <SubHeader>Projects</SubHeader>
         <Projects>
-          <Project />
+          {projects.map((p) => (
+            <Project
+              key={p.title}
+              title={p.title}
+              description={p.description}
+              github={p.github}
+              live={p.live}
+            />
+          ))}
         </Projects>
       </div>
 
