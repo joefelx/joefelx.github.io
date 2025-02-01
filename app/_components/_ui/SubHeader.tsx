@@ -7,7 +7,7 @@ function SubHeader({
   children: React.ReactNode;
   className?: string;
 }) {
-  return <h2 className={`text-lg my-2 font-bold ${className}`}>{children}</h2>;
+  return <h2 className={`text-6xl my-2 ${className}`}>{children}</h2>;
 }
 
 export default SubHeader;

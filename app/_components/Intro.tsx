@@ -57,9 +57,8 @@ function Intro() {
           <p className="text-white/50 w-3/4">
             I am an Engineer who is a Software Developer working towards new
             things and building projects that excites me. Working in Full Stack
-            Projects. Learning Software development. Like to Tinkering with
-            Linux. Believes in Web3 and Blockchain. Eager to explore various
-            interests.
+            Projects. Learning Software development. Likes tinkering with Linux.
+            Believes in Web3 and Blockchain. Eager to explore various interests.
           </p>
         </div>
         <ul className="flex gap-2 items-center">
@@ -73,7 +72,7 @@ function Intro() {
 
       {/* Projects */}
       <div>
-        <SubHeader>Projects</SubHeader>
+        <SubHeader>Works</SubHeader>
         <Projects>
           {projects.map((p) => (
             <Project
@@ -88,15 +87,18 @@ function Intro() {
       </div>
 
       {/* Links */}
-      <div>
-        <SubHeader>Socials</SubHeader>
-        <ul className="flex gap-2">
-          {links.map((l, index) => (
-            <Link key={index} name={l.name} url={l.url}>
-              {l.icon}
-            </Link>
-          ))}
-        </ul>
+      <div className="h-36 flex flex-col items-center justify-evenly">
+        <div className="flex flex-col items-center">
+          <span>Socials</span>
+          <ul className="flex gap-2">
+            {links.map((l, index) => (
+              <Link key={index} name={l.name} url={l.url}>
+                {l.icon}
+              </Link>
+            ))}
+          </ul>
+        </div>
+        <span className="text-sm">Developed By Felix</span>
       </div>
     </div>
   );
