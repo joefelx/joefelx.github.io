@@ -38,7 +38,7 @@ function Intro() {
     github: string;
     live: string;
     image: string;
-    tools: [string];
+    tools: string[];
   }
 
   const [projects, setProjects] = useState<Array<IProject>>([]);
@@ -54,7 +54,7 @@ function Intro() {
       {/* Intro */}
       <div className="my-20">
         <div className="mt-20 mb-10">
-          <h1 className="text-5xl font-bold my-5">Hi! I'm Joe Felix</h1>
+          <h1 className="text-5xl font-bold my-5">Hi! I&apos;m Joe Felix</h1>
           <p className="text-white/50 w-3/4">
             I am an Engineer who is a Software Developer working towards new
             things and building projects that excites me. Working in Full Stack
