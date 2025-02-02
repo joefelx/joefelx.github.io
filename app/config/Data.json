@@ -6,14 +6,16 @@
       "description": "QuickHeal is a comprehensive healthcare web application designed to facilitate seamless communication and interaction between patients and doctors. The platform aims to simplify the process of accessing healthcare services and managing medical consultations.",
       "github": "https://github.com/joefelx/quickheal",
       "live": "quickheal.vercel.app",
-      "image": ""
+      "image": "",
+      "tools": ["React", "Nodejs", "MongoDB", "Websockets"]
     },
     {
       "title": "QuickHeal",
       "description": "QuickHeal is a comprehensive healthcare web application designed to facilitate seamless communication and interaction between patients and doctors. The platform aims to simplify the process of accessing healthcare services and managing medical consultations.",
       "github": "https://github.com/joefelx/quickheal",
       "live": "quickheal.vercel.app",
-      "image": ""
+      "image": "",
+      "tools": ["React", "Nodejs", "MongoDB", "Websockets"]
     }
   ]
 }

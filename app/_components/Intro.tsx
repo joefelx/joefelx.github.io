@@ -38,6 +38,7 @@ function Intro() {
     github: string;
     live: string;
     image: string;
+    tools: [string];
   }
 
   const [projects, setProjects] = useState<Array<IProject>>([]);
@@ -81,6 +82,7 @@ function Intro() {
               description={p.description}
               github={p.github}
               live={p.live}
+              tools={p.tools}
             />
           ))}
         </Projects>

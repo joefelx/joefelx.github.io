@@ -8,15 +8,16 @@ function Project({
   description,
   github,
   live,
+  tools,
 }: {
   title: string;
   description: string;
   github: string;
   live: string;
+  tools: Array<string>;
 }) {
-  const development = new Array<string>("html", "css");
   return (
-    <div className="border-b-2 border-gray-500 min-w-64 py-14 overflow-hidden">
+    <div className="border-b-2 border-gray-500 min-w-64 overflow-hidden my-5">
       <div className="flex h-64 justify-center items-center">
         <Image
           draggable={true}
@@ -26,27 +27,27 @@ function Project({
         ></Image>
       </div>
 
-      <div className="pt-5">
-        <h1 className="text-5xl my-2">{title}</h1>
+      {/* Title, Description and Tools */}
+      <div className="flex flex-col gap-5 my-12">
+        <h1 className="text-5xl">{title}</h1>
         <p className="text-md text-gray-500">{description}</p>
-      </div>
+        <div className="flex justify-between items-center ">
+          {/* tags */}
+          <div className="flex flex-wrap gap-3 mt-2 flex-1">
+            {tools.map((d, index) => (
+              <span
+                className="text-sm text-gray-100 border-2 border-gray-100 py-1 px-4 rounded-full"
+                key={index}
+              >
+                {d}
+              </span>
+            ))}
+          </div>
 
-      <div className="flex justify-between items-center">
-        {/* tags */}
-        {/* <div className="flex gap-3 mt-2">
-          {development.map((d, index) => (
-            <span
-              className="text-sm text-yellow-200 bg-yellow-600 border border-yellow-300 py-1 px-2 rounded-xl"
-              key={index}
-            >
-              {d}
-            </span>
-          ))}
-        </div> */}
-
-        <div className="mt-4 flex gap-5">
-          <a href={github}>Github</a>
-          <a href={live}>Demo</a>
+          <div className="mt-4 flex gap-5 flex-1 justify-end">
+            <a href={github}>Github</a>
+            <a href={live}>Live</a>
+          </div>
         </div>
       </div>
     </div>
