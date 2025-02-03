@@ -1,31 +1,109 @@
 {
-  "name": "Joe",
+  "name": "Joe Felix",
+  "title": "Full-Stack Developer | Open Source Contributor | Software Engineer",
+  "about": "I am a passionate Full-Stack Developer with a strong foundation in Data Structures and Algorithms, System Design, and Web Technologies. I have experience building scalable and high-performance applications and contributing to open-source projects. My expertise spans front-end and back-end development, cloud computing, and database management.",
   "projects": [
     {
       "title": "QuickHeal",
-      "description": "QuickHeal is a comprehensive healthcare web application designed to facilitate seamless communication and interaction between patients and doctors. The platform aims to simplify the process of accessing healthcare services and managing medical consultations.",
+      "description": "QuickHeal is a comprehensive healthcare web application designed to facilitate seamless communication and interaction between patients and doctors. The platform simplifies access to healthcare services and medical consultations.",
       "github": "https://github.com/joefelx/quickheal",
-      "live": "quickheal.vercel.app",
-      "image": "",
-      "tools": ["React", "Nodejs", "MongoDB", "Websockets"]
+      "live": "https://quickheal.vercel.app",
+      "image": "https://your-image-url.com/quickheal.png",
+      "tools": ["React", "Node.js", "MongoDB", "Websockets", "Express"]
     },
     {
-      "title": "QuickHeal",
-      "description": "QuickHeal is a comprehensive healthcare web application designed to facilitate seamless communication and interaction between patients and doctors. The platform aims to simplify the process of accessing healthcare services and managing medical consultations.",
-      "github": "https://github.com/joefelx/quickheal",
-      "live": "quickheal.vercel.app",
-      "image": "",
-      "tools": ["React", "Nodejs", "MongoDB", "Websockets"]
+      "title": "Nimbus Tweet",
+      "description": "A Twitter thread generator that converts long paragraphs into multiple concise tweets while adhering to Twitter’s character limit. This project improves user experience by making content creation easier.",
+      "github": "https://github.com/joefelx/nimbus-tweet",
+      "live": "https://nimbus-tweet.vercel.app",
+      "image": "https://your-image-url.com/nimbus-tweet.png",
+      "tools": ["React", "Node.js", "MongoDB", "Redis", "Next.js"]
+    },
+    {
+      "title": "Font Verse",
+      "description": "FontVerse is a font library that enables users to browse, select, and use various fonts efficiently. It enhances performance with Redis caching and improves font rendering for a seamless experience.",
+      "github": "https://github.com/joefelx/fontverse",
+      "live": "https://fontverse.vercel.app",
+      "image": "https://your-image-url.com/fontverse.png",
+      "tools": ["React", "Node.js", "MongoDB", "Redis"]
+    },
+    {
+      "title": "Banking Website",
+      "description": "A banking web application prototype that includes user authentication, secure money transactions, and an intuitive UI for easy financial management.",
+      "github": "https://github.com/joefelx/banking-website",
+      "live": "https://banking-website.vercel.app",
+      "image": "https://your-image-url.com/banking-website.png",
+      "tools": ["React", "Node.js", "MongoDB", "Express", "JWT"]
+    },
+    {
+      "title": "Instagram Clone",
+      "description": "A feature-rich social media platform that replicates the core functionalities of Instagram, including authentication, posts, likes, and comments.",
+      "github": "https://github.com/joefelx/instagram-clone",
+      "live": "https://instagram-clone.vercel.app",
+      "image": "https://your-image-url.com/instagram-clone.png",
+      "tools": ["React", "Node.js", "MongoDB", "Redux"]
     }
   ],
   "skills": [
     "Java",
-    "Javascript",
+    "JavaScript",
     "Python",
-    "Nodejs",
+    "TypeScript",
+    "Node.js",
     "React",
-    "Next",
+    "Next.js",
     "MongoDB",
-    "Docker"
-  ]
+    "SQL",
+    "Redis",
+    "Docker",
+    "Kubernetes",
+    "Git",
+    "GraphQL",
+    "REST APIs",
+    "Microservices",
+    "WebSockets",
+    "CI/CD"
+  ],
+  "education": {
+    "degree": "B.E. in Electronics and Communication Engineering",
+    "college": "PSNA College of Engineering and Technology, Dindigul",
+    "year": "2021 - 2025",
+    "gpa": "8.7/10"
+  },
+  "certifications": [
+    {
+      "name": "J.P. Morgan Software Engineering Virtual Experience",
+      "provider": "Forage",
+      "date": "August 2024"
+    },
+    {
+      "name": "Web Development Bootcamp",
+      "provider": "Udemy",
+      "date": "Completed"
+    },
+    {
+      "name": "Agile Project Management",
+      "provider": "HP Life",
+      "date": "Completed"
+    },
+    {
+      "name": "Postman API Fundamentals",
+      "provider": "Postman",
+      "date": "Completed"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Project Maintainer - QuickHeal",
+      "organization": "Script Winter of Code (SWOC)",
+      "duration": "Jan 2025 - Present",
+      "description": "Managed and maintained the QuickHeal project, overseeing feature development, issue tracking, and code contributions from multiple contributors. Ensured high-quality code reviews and guided contributors through best practices in software development."
+    }
+  ],
+  "contact": {
+    "email": "joefelx@example.com",
+    "linkedin": "https://linkedin.com/in/joefelx",
+    "github": "https://github.com/joefelx",
+    "portfolio": "https://joefelx.dev"
+  }
 }

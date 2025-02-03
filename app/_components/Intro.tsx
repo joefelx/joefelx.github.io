@@ -32,7 +32,7 @@ function Intro() {
     },
   ];
 
-  interface IProject {
+  interface Project {
     title: string;
     description: string;
     github: string;
@@ -41,10 +41,43 @@ function Intro() {
     tools: string[];
   }
 
+  interface Education {
+    degree: string;
+    college: string;
+    year: string;
+    gpa: string;
+  }
+
+  interface Certification {
+    name: string;
+    provider: string;
+    date: string;
+  }
+
+  interface Experience {
+    role: string;
+    organization: string;
+    duration: string;
+    description: string;
+  }
+
+  interface Contact {
+    email: string;
+    linkedin: string;
+    github: string;
+    portfolio: string;
+  }
+
   interface Data {
     name: string;
-    projects: IProject[];
+    title: string;
+    about: string;
+    projects: Project[];
     skills: string[];
+    education: Education;
+    certifications: Certification[];
+    experience: Experience[];
+    contact: Contact;
   }
 
   const [data, setData] = useState<Data>(jsonData);
