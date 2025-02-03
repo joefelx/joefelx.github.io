@@ -6,7 +6,7 @@ import Projects from "./Projects";
 import Project from "./Project";
 import { FaGithub, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
-import data from "../config/Data.json";
+import jsonData from "../config/Data.json";
 
 function Intro() {
   const links = [
@@ -41,18 +41,22 @@ function Intro() {
     tools: string[];
   }
 
-  const [projects, setProjects] = useState<Array<IProject>>([]);
+  interface Data {
+    name: string;
+    projects: IProject[];
+    skills: string[];
+  }
+
+  const [data, setData] = useState<Data>(jsonData);
 
   useEffect(() => {
-    // Example usage:
-    console.log(data["name"]);
-    setProjects(data["projects"]);
+    setData(jsonData);
   }, []);
 
   return (
-    <div className="p-5">
+    <div className="flex flex-col gap-20">
       {/* Intro */}
-      <div className="my-20">
+      <div>
         <div className="mt-20 mb-10">
           <h1 className="text-5xl font-bold my-5">Hi! I&apos;m Joe Felix</h1>
           <p className="text-white/50 w-3/4">
@@ -75,7 +79,7 @@ function Intro() {
       <div>
         <SubHeader>Works</SubHeader>
         <Projects>
-          {projects.map((p) => (
+          {data["projects"].map((p) => (
             <Project
               key={p.title}
               title={p.title}
@@ -86,6 +90,21 @@ function Intro() {
             />
           ))}
         </Projects>
+      </div>
+
+      {/* Skills */}
+      <div>
+        <SubHeader>Skills</SubHeader>
+        <div className="my-5 flex flex-wrap gap-5 justify-center items-center">
+          {data["skills"].map((s) => (
+            <span
+              className="border-2 border-white py-3 px-6 rounded-full text-xl"
+              key={s}
+            >
+              {s}
+            </span>
+          ))}
+        </div>
       </div>
 
       {/* Links */}
