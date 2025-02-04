@@ -17,7 +17,7 @@ function Project({
   tools: Array<string>;
 }) {
   return (
-    <div className="border-b-2 border-gray-500 min-w-64 overflow-hidden my-5">
+    <div className="border-b-2 border-gray-500 min-w-64 overflow-hidden ">
       <div className="flex h-64 justify-center items-center">
         <Image
           draggable={true}
@@ -33,7 +33,7 @@ function Project({
         <p className="text-md text-gray-500">{description}</p>
         <div className="flex justify-between items-center ">
           {/* tags */}
-          <div className="flex flex-wrap gap-3 mt-2 flex-1">
+          <div className="flex flex-wrap gap-3 mt-2 flex-[2]">
             {tools.map((d, index) => (
               <span
                 className="text-sm text-gray-100 border-2 border-gray-100 py-1 px-4 rounded-full"

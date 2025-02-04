@@ -2,6 +2,7 @@
   "name": "Joe Felix",
   "title": "Full-Stack Developer | Open Source Contributor | Software Engineer",
   "about": "I am a passionate Full-Stack Developer with a strong foundation in Data Structures and Algorithms, System Design, and Web Technologies. I have experience building scalable and high-performance applications and contributing to open-source projects. My expertise spans front-end and back-end development, cloud computing, and database management.",
+  "resume": "https://drive.google.com/file/d/1rF8qj3SYZ30hhAXjJ9Md4CRdF_Ru-M9d/view?usp=drive_link",
   "projects": [
     {
       "title": "QuickHeal",
@@ -101,9 +102,31 @@
     }
   ],
   "contact": {
-    "email": "joefelx@example.com",
+    "email": "joefelixdev@gmail.com",
     "linkedin": "https://linkedin.com/in/joefelx",
     "github": "https://github.com/joefelx",
-    "portfolio": "https://joefelx.dev"
-  }
+    "portfolio": "https://joefelx.github.io"
+  },
+  "links": [
+    {
+      "name": "Github",
+      "icon": "<FaGithub />",
+      "url": "https://github.com/joefelx"
+    },
+    {
+      "name": "Linkedin",
+      "icon": "<FaLinkedinIn className='text-[23px]' />",
+      "url": "https://www.linkedin.com/in/joefelx"
+    },
+    {
+      "name": "Leetcode",
+      "icon": "<SiLeetcode className='text-[20px]' />",
+      "url": "https://leetcode.com/u/joefelx"
+    },
+    {
+      "name": "X",
+      "icon": "<FaXTwitter />",
+      "url": "https://x.com/joefelix_a"
+    }
+  ]
 }
