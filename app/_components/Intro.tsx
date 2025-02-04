@@ -68,16 +68,24 @@ function Intro() {
     portfolio: string;
   }
 
+  interface SocialLink {
+    name: string;
+    icon: string;
+    url: string;
+  }
+
   interface Data {
     name: string;
     title: string;
     about: string;
+    resume: string;
     projects: Project[];
     skills: string[];
     education: Education;
     certifications: Certification[];
     experience: Experience[];
     contact: Contact;
+    links: SocialLink[];
   }
 
   const [data, setData] = useState<Data>(jsonData);
@@ -89,7 +97,7 @@ function Intro() {
   return (
     <div className="flex flex-col gap-20">
       {/* Intro */}
-      <div>
+      <div className="py-32">
         <div className="mt-20 mb-10">
           <h1 className="text-5xl font-bold my-5">Hi! I&apos;m Joe Felix</h1>
           <p className="text-white/50 w-3/4">
@@ -99,13 +107,24 @@ function Intro() {
             Believes in Web3 and Blockchain. Eager to explore various interests.
           </p>
         </div>
-        <ul className="flex gap-2 items-center">
-          {links.map((l, index) => (
-            <Link key={index} name={l.name}>
-              {l.icon}
-            </Link>
-          ))}
-        </ul>
+
+        <div className="flex gap-5">
+          <ul className="flex gap-2 items-center">
+            {links.map((l, index) => (
+              <Link key={index} name={l.name}>
+                {l.icon}
+              </Link>
+            ))}
+          </ul>
+
+          <a
+            className="text-base font-bold border-2 border-white rounded-full py-1 px-4 hover:bg-white hover:text-black cursor-pointer"
+            href={data["resume"]}
+            target="_blank"
+          >
+            Resume
+          </a>
+        </div>
       </div>
 
       {/* Projects */}
@@ -141,18 +160,29 @@ function Intro() {
       </div>
 
       {/* Links */}
-      <div className="h-36 flex flex-col items-center justify-evenly">
-        <div className="flex flex-col items-center">
-          <span>Socials</span>
+      <div className="min-h-96 flex flex-col justify-between mt-32">
+        <div className="h-full flex flex-col items-center gap-2">
+          <h1 className="text-[70px] font-black">Keep In Touch!</h1>
+          <span className="text-lg">
+            Email @{" "}
+            <a
+              className="cursor-pointer hover:text-gray-500"
+              href="mailto:joefelixdev@gmail.com"
+            >
+              {data["contact"].email}
+            </a>
+          </span>
           <ul className="flex gap-2">
-            {links.map((l, index) => (
-              <Link key={index} name={l.name} url={l.url}>
-                {l.icon}
-              </Link>
+            {data["links"].map((l, index) => (
+              <a key={index} href={l.url}>
+                <p>{l.name}</p>
+              </a>
             ))}
           </ul>
         </div>
-        <span className="text-sm">Developed By Felix</span>
+        <span className="text-sm flex items-center justify-center my-1">
+          Developed By Felix
+        </span>
       </div>
     </div>
   );
