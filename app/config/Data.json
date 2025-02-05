@@ -10,7 +10,8 @@
       "github": "https://github.com/joefelx/quickheal",
       "live": "https://quickheal.vercel.app",
       "image": "https://your-image-url.com/quickheal.png",
-      "tools": ["React", "Node.js", "MongoDB", "Websockets", "Express"]
+      "tools": ["React", "Node.js", "MongoDB", "Websockets", "Express"],
+      "timeline": "Jan 2024 - Present"
     },
     {
       "title": "Nimbus Tweet",
@@ -18,7 +19,8 @@
       "github": "https://github.com/joefelx/nimbus-tweet",
       "live": "https://nimbus-tweet.vercel.app",
       "image": "https://your-image-url.com/nimbus-tweet.png",
-      "tools": ["React", "Node.js", "MongoDB", "Redis", "Next.js"]
+      "tools": ["React", "Node.js", "MongoDB", "Redis", "Next.js"],
+      "timeline": "Nov 2023 - Feb 2024"
     },
     {
       "title": "Font Verse",
@@ -26,23 +28,17 @@
       "github": "https://github.com/joefelx/fontverse",
       "live": "https://fontverse.vercel.app",
       "image": "https://your-image-url.com/fontverse.png",
-      "tools": ["React", "Node.js", "MongoDB", "Redis"]
+      "tools": ["React", "Node.js", "MongoDB", "Redis"],
+      "timeline": "Aug 2023 - Dec 2023"
     },
     {
-      "title": "Banking Website",
-      "description": "A banking web application prototype that includes user authentication, secure money transactions, and an intuitive UI for easy financial management.",
-      "github": "https://github.com/joefelx/banking-website",
-      "live": "https://banking-website.vercel.app",
-      "image": "https://your-image-url.com/banking-website.png",
-      "tools": ["React", "Node.js", "MongoDB", "Express", "JWT"]
-    },
-    {
-      "title": "Instagram Clone",
-      "description": "A feature-rich social media platform that replicates the core functionalities of Instagram, including authentication, posts, likes, and comments.",
-      "github": "https://github.com/joefelx/instagram-clone",
-      "live": "https://instagram-clone.vercel.app",
-      "image": "https://your-image-url.com/instagram-clone.png",
-      "tools": ["React", "Node.js", "MongoDB", "Redux"]
+      "title": "Tic-Tac-Toe Online",
+      "description": "Tic-Tac-Toe Online is a multiplayer version of the classic Tic-Tac-Toe game, designed to be played over the internet. This project allows users to compete with each other in real-time by connecting to a server that manages the gameplay. The game features a sleek UI, smooth interactions, and real-time updates to enhance the player experience.",
+      "github": "https://github.com/joefelx/tictactoe-online",
+      "live": "https://tictactoe-online-joefelx.vercel.app/",
+      "image": "https://your-image-url.com/tictactoe-online.png",
+      "tools": ["React", "Node.js", "WebSockets"],
+      "timeline": "Oct 2023 - Nov 2023"
     }
   ],
   "skills": [

@@ -39,6 +39,7 @@ function Intro() {
     live: string;
     image: string;
     tools: string[];
+    timeline: string;
   }
 
   interface Education {

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-import engineer from "../assets/engineer.jpg";
+// import engineer from "../assets/engineer.jpg";
 
 function Project({
   title,
@@ -18,13 +18,8 @@ function Project({
 }) {
   return (
     <div className="border-b-2 border-gray-500 min-w-64 overflow-hidden ">
-      <div className="flex h-64 justify-center items-center">
-        <Image
-          draggable={true}
-          className="w-full h-full object-cover"
-          src={engineer}
-          alt="image"
-        ></Image>
+      <div className="flex h-80 justify-center items-center">
+        <iframe className="w-full h-full" src={live}></iframe>
       </div>
 
       {/* Title, Description and Tools */}
