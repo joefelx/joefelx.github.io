@@ -9,17 +9,25 @@ function Project({
   github,
   live,
   tools,
+  image,
 }: {
   title: string;
   description: string;
   github: string;
   live: string;
   tools: Array<string>;
+  image: string;
 }) {
   return (
     <div className="border-b-2 border-gray-500 min-w-64 overflow-hidden ">
-      <div className="flex h-80 justify-center items-center">
-        <iframe className="w-full h-full" src={live}></iframe>
+      <div className="flex h-80 justify-center items-center relative object-contain">
+        {/* <iframe className="w-full h-full" src={live}></iframe> */}
+        <Image
+          src={image}
+          fill
+          className="w-full h-full object-cover"
+          alt="placeholder"
+        />
       </div>
 
       {/* Title, Description and Tools */}

@@ -9,7 +9,7 @@
       "description": "QuickHeal is a comprehensive healthcare web application designed to facilitate seamless communication and interaction between patients and doctors. The platform simplifies access to healthcare services and medical consultations.",
       "github": "https://github.com/joefelx/quickheal",
       "live": "https://quickheal.vercel.app",
-      "image": "https://your-image-url.com/quickheal.png",
+      "image": "/assets/quickheal.png",
       "tools": ["React", "Node.js", "MongoDB", "Websockets", "Express"],
       "timeline": "Jan 2024 - Present"
     },
@@ -18,7 +18,7 @@
       "description": "A Twitter thread generator that converts long paragraphs into multiple concise tweets while adhering to Twitter’s character limit. This project improves user experience by making content creation easier.",
       "github": "https://github.com/joefelx/nimbus-tweet",
       "live": "https://nimbus-tweet.vercel.app",
-      "image": "https://your-image-url.com/nimbus-tweet.png",
+      "image": "/assets/nimbustweet.png",
       "tools": ["React", "Node.js", "MongoDB", "Redis", "Next.js"],
       "timeline": "Nov 2023 - Feb 2024"
     },
@@ -27,7 +27,7 @@
       "description": "FontVerse is a font library that enables users to browse, select, and use various fonts efficiently. It enhances performance with Redis caching and improves font rendering for a seamless experience.",
       "github": "https://github.com/joefelx/fontverse",
       "live": "https://fontverse.vercel.app",
-      "image": "https://your-image-url.com/fontverse.png",
+      "image": "/assets/fontverse.png",
       "tools": ["React", "Node.js", "MongoDB", "Redis"],
       "timeline": "Aug 2023 - Dec 2023"
     },
@@ -36,7 +36,7 @@
       "description": "Tic-Tac-Toe Online is a multiplayer version of the classic Tic-Tac-Toe game, designed to be played over the internet. This project allows users to compete with each other in real-time by connecting to a server that manages the gameplay. The game features a sleek UI, smooth interactions, and real-time updates to enhance the player experience.",
       "github": "https://github.com/joefelx/tictactoe-online",
       "live": "https://tictactoe-online-joefelx.vercel.app/",
-      "image": "https://your-image-url.com/tictactoe-online.png",
+      "image": "/assets/tictactoe.png",
       "tools": ["React", "Node.js", "WebSockets"],
       "timeline": "Oct 2023 - Nov 2023"
     }
