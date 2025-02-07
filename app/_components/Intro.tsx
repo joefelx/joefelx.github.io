@@ -99,17 +99,14 @@ function Intro() {
     <div className="flex flex-col gap-20">
       {/* Intro */}
       <div className="py-32">
-        <div className="mt-20 mb-10">
-          <h1 className="text-5xl font-bold my-5">Hi! I&apos;m Joe Felix</h1>
-          <p className="text-white/50 w-3/4">
-            I am an Engineer who is a Software Developer working towards new
-            things and building projects that excites me. Working in Full Stack
-            Projects. Learning Software development. Likes tinkering with Linux.
-            Believes in Web3 and Blockchain. Eager to explore various interests.
-          </p>
+        <div className="md:mt-20 mb-10 text-center ">
+          <h1 className="md:text-5xl text-4xl font-bold my-5">
+            Hi! I&apos;m Joe Felix
+          </h1>
+          <p className="text-white/50 md:w-3/4">{data["about"]}</p>
         </div>
 
-        <div className="flex gap-5">
+        <div className="flex gap-5 md:justify-start justify-center">
           <ul className="flex gap-2 items-center">
             {links.map((l, index) => (
               <Link key={index} name={l.name}>
@@ -163,7 +160,7 @@ function Intro() {
 
       {/* Links */}
       <div className="min-h-96 flex flex-col justify-between mt-32">
-        <div className="h-full flex flex-col items-center gap-2">
+        <div className="h-full flex flex-col text-center items-center gap-2">
           <h1 className="text-[70px] font-black">Keep In Touch!</h1>
           <span className="text-lg">
             Email @{" "}
