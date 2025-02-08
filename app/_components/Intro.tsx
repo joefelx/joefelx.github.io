@@ -96,10 +96,20 @@ function Intro() {
   }, []);
 
   return (
-    <div className="flex flex-col gap-20">
+    <div className="h-full w-full flex flex-col gap-20">
+      <div className="grid-container">
+        <div className="plane">
+          <div className="grid"></div>
+          <div className="glow"></div>
+        </div>
+        <div className="plane">
+          <div className="grid"></div>
+          <div className="glow"></div>
+        </div>
+      </div>
       {/* Intro */}
-      <div className="py-32">
-        <div className="md:mt-20 mb-10 text-center ">
+      <div className="min-h-screen flex flex-col justify-center ">
+        <div className="mb-10 md:text-left text-center ">
           <h1 className="md:text-5xl text-4xl font-bold my-5">
             Hi! I&apos;m Joe Felix
           </h1>
@@ -144,7 +154,7 @@ function Intro() {
       </div>
 
       {/* Skills */}
-      <div>
+      <div className="my-20">
         <SubHeader>Skills</SubHeader>
         <div className="my-5 flex flex-wrap gap-5 justify-center items-center">
           {data["skills"].map((s) => (
