@@ -98,10 +98,10 @@ function Intro() {
   return (
     <div className="h-full w-full flex flex-col gap-20">
       <div className="grid-container">
-        <div className="plane">
+        {/* <div className="plane">
           <div className="grid"></div>
           <div className="glow"></div>
-        </div>
+        </div> */}
         <div className="plane">
           <div className="grid"></div>
           <div className="glow"></div>
@@ -109,14 +109,14 @@ function Intro() {
       </div>
       {/* Intro */}
       <div className="min-h-screen flex flex-col justify-center ">
-        <div className="mb-10 md:text-left text-center ">
+        <div className="mb-10 md:text-left text-center z-10">
           <h1 className="md:text-5xl text-4xl font-bold my-5">
             Hi! I&apos;m Joe Felix
           </h1>
           <p className="text-white/50 md:w-3/4">{data["about"]}</p>
         </div>
 
-        <div className="flex gap-5 md:justify-start justify-center">
+        <div className="flex gap-5 md:justify-start justify-center z-10">
           <ul className="flex gap-2 items-center">
             {links.map((l, index) => (
               <Link key={index} name={l.name}>
@@ -126,7 +126,7 @@ function Intro() {
           </ul>
 
           <a
-            className="text-base font-bold border-2 border-white rounded-full py-1 px-4 hover:bg-white hover:text-black cursor-pointer"
+            className="text-base text-white font-bold border-2 border-[#008000] rounded-full py-1 px-4 hover:bg-[#008000] hover:text-white cursor-pointer"
             href={data["resume"]}
             target="_blank"
           >
@@ -169,6 +169,17 @@ function Intro() {
       </div>
 
       {/* Links */}
+
+      <div className="grid-container-bottom">
+        <div className="plane">
+          <div className="grid"></div>
+          <div className="glow"></div>
+        </div>
+        <div className="plane">
+          <div className="grid"></div>
+          <div className="glow"></div>
+        </div>
+      </div>
       <div className="min-h-96 flex flex-col justify-between mt-32">
         <div className="h-full flex flex-col text-center items-center gap-2">
           <h1 className="text-[70px] font-black">Keep In Touch!</h1>
