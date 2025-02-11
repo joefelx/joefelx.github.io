@@ -124,7 +124,7 @@ h1::after {
 .grid-container .plane > *::before {
   background-image: repeating-linear-gradient(
       to left,
-      green,
+      #008000,
       green 4px,
       transparent 4px,
       transparent var(--grid)

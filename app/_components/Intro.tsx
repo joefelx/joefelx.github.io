@@ -168,42 +168,62 @@ function Intro() {
         </div>
       </div>
 
-      {/* Links */}
-
-      <div className="grid-container-bottom">
-        <div className="plane">
-          <div className="grid"></div>
-          <div className="glow"></div>
-        </div>
-        <div className="plane">
-          <div className="grid"></div>
-          <div className="glow"></div>
+      {/* Experience */}
+      <div>
+        <SubHeader>Experience</SubHeader>
+        <div>
+          {data["experience"].map((e) => (
+            <div key={e.organization}>
+              <div>
+                <h2 className="text-sm">{e.duration}</h2>
+              </div>
+              <div className="m-5 p-5 border-l-2 border-l-[#008000]">
+                <h2 className="text-xl">{e.role}</h2>
+                <p className="text-[#008000]">{e.organization}</p>
+                <br />
+                <span className="text-white/50">{e.description}</span>
+              </div>
+              {/* </div> */}
+            </div>
+          ))}
         </div>
       </div>
-      <div className="min-h-96 flex flex-col justify-between mt-32">
-        <div className="h-full flex flex-col text-center items-center gap-2">
+
+      {/* Links */}
+      <div className="min-h-screen relative flex flex-col justify-center items-center">
+        <div className="flex flex-col text-center items-center gap-2">
           <h1 className="text-[70px] font-black">Keep In Touch!</h1>
-          <span className="text-lg">
-            Email @{" "}
+          <span className="text-lg italic">
+            Mail @{" "}
             <a
-              className="cursor-pointer hover:text-gray-500"
+              className="cursor-pointer hover:text-[#008000]"
               href="mailto:joefelixdev@gmail.com"
             >
               {data["contact"].email}
             </a>
           </span>
-          <ul className="flex gap-2">
+          <ul className="flex items-center gap-10 my-5">
             {data["links"].map((l, index) => (
               <a key={index} href={l.url}>
-                <p>{l.name}</p>
+                <p className="text-3xl hover:text-[#008000]">
+                  {l.name == "Github" ? (
+                    <FaGithub />
+                  ) : l.name == "Linkedin" ? (
+                    <FaLinkedinIn />
+                  ) : l.name == "Leetcode" ? (
+                    <SiLeetcode />
+                  ) : (
+                    <FaXTwitter />
+                  )}
+                </p>
               </a>
             ))}
           </ul>
         </div>
-        <span className="text-sm flex items-center justify-center my-1">
-          Designed & Developed By Felix
-        </span>
       </div>
+      <span className="text-sm text-white/50 flex items-center justify-center py-5">
+        Designed & Developed By Felix
+      </span>
     </div>
   );
 }

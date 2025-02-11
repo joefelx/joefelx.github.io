@@ -95,6 +95,12 @@
       "organization": "Script Winter of Code (SWOC)",
       "duration": "Jan 2025 - Present",
       "description": "Managed and maintained the QuickHeal project, overseeing feature development, issue tracking, and code contributions from multiple contributors. Ensured high-quality code reviews and guided contributors through best practices in software development."
+    },
+    {
+      "role": "Web Development Intern",
+      "organization": "The Sparks Foundation",
+      "duration": "Jan 2022 - Mar 2022",
+      "description": "Developed a basic banking website to simulate transactions using Express.js and HTML. Implemented core banking functionalities, including user authentication and transaction processing, while ensuring a responsive and user-friendly interface."
     }
   ],
   "contact": {
