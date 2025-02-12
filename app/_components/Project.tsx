@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { FaGithub, FaLink } from "react-icons/fa6";
 
 // import engineer from "../assets/engineer.jpg";
 
@@ -19,7 +20,7 @@ function Project({
   image: string;
 }) {
   return (
-    <div className="border-b-2 border-gray-500 min-w-64 overflow-hidden ">
+    <div className=" min-w-64 overflow-hidden my-10">
       <div className="flex h-80 justify-center items-center relative object-contain">
         {/* <iframe className="w-full h-full" src={live}></iframe> */}
         <Image
@@ -47,9 +48,13 @@ function Project({
             ))}
           </div>
 
-          <div className="mt-4 flex gap-5 flex-1 justify-end">
-            <a href={github}>Github</a>
-            <a href={live}>Live</a>
+          <div className="mt-4 text-2xl flex gap-5 flex-1 justify-end">
+            <a href={github}>
+              <FaGithub />
+            </a>
+            <a href={live}>
+              <FaLink />
+            </a>
           </div>
         </div>
       </div>
