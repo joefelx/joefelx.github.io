@@ -91,6 +91,18 @@
   ],
   "experience": [
     {
+      "role": "Programmer Analyst Trainee",
+      "organization": "Cognizant",
+      "duration": "Jul 2025 - Current",
+      "description": ""
+    },
+    {
+      "role": "Intern",
+      "organization": "Cognizant",
+      "duration": "Mar 2025 - Jun 2025",
+      "description": "Worked on component-driven web development using Java, Sling Models, JSP, and HTML/CSS within an enterprise CMS environment. Gained experience in backend development, content workflows, and system architecture while participating in code reviews and collaborative projects."
+    },
+    {
       "role": "Project Maintainer - QuickHeal",
       "organization": "Script Winter of Code (SWOC)",
       "duration": "Jan 2025 - Mar 2025",
